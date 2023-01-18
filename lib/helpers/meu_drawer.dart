@@ -71,7 +71,6 @@ class MyDrawer extends StatelessWidget {
               Navigator.pushNamed(context, '/caixa');
             },
           ),
-          const Spacer(),
           ListTile(
             title: const MeuTexto(text: 'Sobre'),
             onTap: () {

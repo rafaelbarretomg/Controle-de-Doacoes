@@ -260,7 +260,7 @@ class _SaidasState extends State<Saidas> {
       barrierDismissible: false, // user must tap button!
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('Deseja realmente deletar a Entrada?'),
+          title: const Text('Deseja realmente deletar a Saída?'),
           actions: <Widget>[
             TextButton(
               child: const MeuTexto(
