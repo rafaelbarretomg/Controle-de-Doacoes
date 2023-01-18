@@ -83,36 +83,38 @@ class _EntradasState extends State<Entradas> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+                              Row(children: [
+                                const MeuTexto(
+                                  text: 'Nome: ',
+                                  size: 12,
+                                  weight: FontWeight.bold,
+                                ),
+                                const SizedBox(
+                                  width: 5,
+                                ),
+                                MeuTexto(
+                                  text: _listaEntradas[index]['nome'],
+                                  size: 14,
+                                ),
+                                const SizedBox(
+                                  width: 20,
+                                ),
+                                const MeuTexto(
+                                  text: 'Valor: ',
+                                  size: 12,
+                                  weight: FontWeight.bold,
+                                ),
+                                MeuTexto(
+                                  text: ' R\$ '
+                                      '${_listaEntradas[index]['valor'].toString().replaceAll('.', ',')}',
+                                  size: 13,
+                                ),
+                                const SizedBox(
+                                  width: 20,
+                                ),
+                              ]),
                               Row(
                                 children: [
-                                  const MeuTexto(
-                                    text: 'Nome: ',
-                                    size: 12,
-                                    weight: FontWeight.bold,
-                                  ),
-                                  const SizedBox(
-                                    width: 5,
-                                  ),
-                                  MeuTexto(
-                                    text: _listaEntradas[index]['nome'],
-                                    size: 14,
-                                  ),
-                                  const SizedBox(
-                                    width: 20,
-                                  ),
-                                  const MeuTexto(
-                                    text: 'Valor: ',
-                                    size: 12,
-                                    weight: FontWeight.bold,
-                                  ),
-                                  MeuTexto(
-                                    text: ' R\$ '
-                                        '${_listaEntradas[index]['valor'].toString().replaceAll('.', ',')}',
-                                    size: 13,
-                                  ),
-                                  const SizedBox(
-                                    width: 20,
-                                  ),
                                   const MeuTexto(
                                     text: 'Data: ',
                                     size: 12,

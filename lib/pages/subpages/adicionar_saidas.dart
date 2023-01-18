@@ -62,8 +62,7 @@ class _AdicionarSaidasState extends State<AdicionarSaidas> {
               children: [
                 Row(
                   children: [
-                    SizedBox(
-                      width: 300,
+                    Flexible(
                       child: TextFormField(
                         controller: controladorDoNome,
                         decoration: const InputDecoration(

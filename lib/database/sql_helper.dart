@@ -273,14 +273,14 @@ class SQLHelper {
 
   static Future<List<Map<String, dynamic>>> getEntradasI() async {
     final db = await SQLHelper.db();
-    return db.query('entradas', orderBy: "id DESC", limit: 7);
+    return db.query('entradas', orderBy: "id DESC", limit: 5);
   }
 
   //Querys Pagina Inicial
 
   static Future<List<Map<String, dynamic>>> getSaidasI() async {
     final db = await SQLHelper.db();
-    return db.query('saidas', orderBy: "id DESC", limit: 7);
+    return db.query('saidas', orderBy: "id DESC", limit: 5);
   }
 
   //  soma
@@ -300,5 +300,4 @@ class SQLHelper {
 
     return value;
   }
-
 }

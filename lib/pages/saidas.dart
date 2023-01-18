@@ -114,6 +114,10 @@ class _SaidasState extends State<Saidas> {
                                   const SizedBox(
                                     width: 20,
                                   ),
+                                ],
+                              ),
+                              Row(
+                                children: [
                                   const MeuTexto(
                                     text: 'Data: ',
                                     size: 12,

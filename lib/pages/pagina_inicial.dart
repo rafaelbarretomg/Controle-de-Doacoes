@@ -160,6 +160,10 @@ class _PaginaInicialState extends State<PaginaInicial> {
                           const SizedBox(
                             width: 20,
                           ),
+                        ],
+                      ),
+                      Row(
+                        children: [
                           const MeuTexto(
                             text: 'Data: ',
                             size: 12,
@@ -212,7 +216,7 @@ class _PaginaInicialState extends State<PaginaInicial> {
             child: ListView.builder(
               itemCount: _listaSaidas.length,
               itemBuilder: (context, index) => Card(
-                margin: const EdgeInsets.all(5),
+                margin: const EdgeInsets.all(2),
                 child: Row(children: [
                   const SizedBox(
                     width: 10,
@@ -251,6 +255,10 @@ class _PaginaInicialState extends State<PaginaInicial> {
                           const SizedBox(
                             width: 20,
                           ),
+                        ],
+                      ),
+                      Row(
+                        children: [
                           const MeuTexto(
                             text: 'Data: ',
                             size: 12,
