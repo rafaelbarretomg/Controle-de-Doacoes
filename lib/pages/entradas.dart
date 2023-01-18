@@ -62,7 +62,7 @@ class _EntradasState extends State<Entradas> {
                   onTap: () {
                     Navigator.pushNamed(context, '/add_entradas');
                   },
-                  text: 'Adicionar doação'),
+                  text: 'Adicionar Entrada'),
             ],
           ),
           Expanded(
@@ -84,7 +84,6 @@ class _EntradasState extends State<Entradas> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
-
                                 children: [
                                   const MeuTexto(
                                     text: 'Nome: ',

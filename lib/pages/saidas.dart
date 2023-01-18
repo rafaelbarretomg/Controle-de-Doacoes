@@ -63,7 +63,7 @@ class _SaidasState extends State<Saidas> {
                   onTap: () {
                     Navigator.pushNamed(context, '/add_saidas');
                   },
-                  text: 'Adicionar'),
+                  text: 'Adicionar Saída'),
             ],
           ),
           Expanded(
