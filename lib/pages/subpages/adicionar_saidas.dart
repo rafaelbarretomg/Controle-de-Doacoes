@@ -82,6 +82,7 @@ class _AdicionarSaidasState extends State<AdicionarSaidas> {
                       labelText: 'Valor', prefixText: 'R\$ '),
                 ),
                 TextFormField(
+                  controller: controladorDaObs,
                   decoration: const InputDecoration(labelText: 'Observações'),
                   maxLines: 5,
                 ),

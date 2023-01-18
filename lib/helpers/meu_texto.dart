@@ -19,6 +19,7 @@ class MeuTexto extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(fontSize: size, color: color, fontWeight: weight),
+      overflow: TextOverflow.ellipsis,
     );
   }
 }
